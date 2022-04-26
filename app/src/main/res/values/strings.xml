@@ -1,12 +1,12 @@
 <resources>
     <string name="app_name">Steel Notes</string>
-    <string name="title1">Зеленый лес</string>
-    <string name="title2">Гора</string>
-    <string name="title3">Водопад</string>
-    <string name="title4">Небо</string>
-    <string name="title5">Туман</string>
-    <string name="title6">Поляна</string>
-    <string name="title7">Осень</string>
+    <string name="title1">title!</string>
+    <string name="title2">title2</string>
+    <string name="title3">title3</string>
+    <string name="title4">title4</string>
+    <string name="title5">title5</string>
+    <string name="title6">title6</string>
+    <string name="title7">title7</string>
     <string name="description1">Сказочный зеленый лес</string>
     <string name="description2">Одинокая гора</string>
     <string name="description3">Бурный водопад в лесу</string>
@@ -15,7 +15,11 @@
     <string name="description6">Солнечная поляна</string>
     <string name="description7">Красная осень</string>
     <string name="add">Добавить заметку</string>
-    <string name="text_clear">Очистить</string>
+    <string name="text_clear">УДАЛИТЬ ВСЕ</string>
     <string name="delete">Удалить</string>
-    <string name="update">Редактировать</string>
+    <string name="update">Изменить</string>
+    <string name="hint_title">Заголовок</string>
+    <string name="hint_text">Текст заметки</string>
+    <string name="note_item_title">Title</string>
+    <string name="note_item_description">Description</string>
 </resources>

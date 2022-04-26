@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.TextureView;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -64,12 +63,6 @@ public class NoteFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_note, container, false);
         recyclerView = view.findViewById(R.id.recycler_view_lines);
-        TextureView descrTV = view.findViewById(R.id.note_body);
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-//            descrTV.getResources().getFont(R.font.asul);
-//        } else {
-//            }
-        // Получим источник данных для списка
         initRecyclerView(recyclerView, data);
 
         if (false) {
@@ -99,7 +92,7 @@ public class NoteFragment extends Fragment {
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext());
         recyclerView.setLayoutManager(layoutManager);
 
-        // Установил адаптер
+
         adapter = new NoteAdapter(this);
         recyclerView.setAdapter(adapter);
         DefaultItemAnimator defaultItemAnimator = new DefaultItemAnimator();
@@ -108,16 +101,14 @@ public class NoteFragment extends Fragment {
         defaultItemAnimator.setRemoveDuration(700);
         recyclerView.setItemAnimator(defaultItemAnimator);
 
-        // Добавил разделитель карточек
+        //  разделитель карточек
         DividerItemDecoration itemDecoration = new DividerItemDecoration(getContext(), LinearLayoutManager.VERTICAL);
         itemDecoration.setDrawable(getResources().getDrawable(R.drawable.separator, null));
         recyclerView.addItemDecoration(itemDecoration);
 
-        // Установим слушателя
         adapter.SetOnItemClickListener(new NoteAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(View view, int position) {
-                // Toast.makeText(getContext(), String.format("Позиция - %d", position), Toast.LENGTH_SHORT).show(); // тест позиции заметки
             }
         });
     }
@@ -159,8 +150,6 @@ public class NoteFragment extends Fragment {
         int position = adapter.getMenuContextClickPosition();
         switch (item.getItemId()) {
             case R.id.action_update:
-               /* data.getCardData(position).setTitle("ОБНОВИЛИ "+position);
-                adapter.notifyItemChanged(position); */
                 navigation.addFragment(NoteUpdateFragment.newInstance(data.getNoteData(position)), true);
                 publisher.subscribe(new Observer() {
                     @Override
