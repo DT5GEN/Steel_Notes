@@ -17,11 +17,11 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/inputTitle"
-                android:maxLength="18"
-                android:maxLines="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Заголовок" />
+                android:hint="@string/hint_title"
+                android:maxLength="18"
+                android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="start|top"
-                android:hint="Текст заметки"
+                android:hint="@string/hint_text"
                 android:inputType="textCapSentences|textMultiLine"
                 android:lines="5"
                 android:maxLines="999"
@@ -52,4 +52,5 @@
         android:datePickerMode="calendar"
         и режим отображения календаря в spinner-режиме
         android:calendarViewShown="true" -->
-    </LinearLayout></androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

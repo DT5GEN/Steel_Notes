@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudioProjects/Steel_Notes/app/src/main/res/drawable/separator.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Steel_Notes/app/src/main/res/layout-v31/fragment_note.xml" value="0.30104166666666665" />
+        <entry key="..\:/AndroidStudioProjects/Steel_Notes/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/AndroidStudioProjects/Steel_Notes/app/src/main/res/layout/content_main.xml" value="0.30104166666666665" />
+        <entry key="..\:/AndroidStudioProjects/Steel_Notes/app/src/main/res/layout/fragment_note.xml" value="0.33" />
+        <entry key="..\:/AndroidStudioProjects/Steel_Notes/app/src/main/res/layout/fragment_update_note.xml" value="0.30104166666666665" />
         <entry key="..\:/AndroidStudioProjects/Steel_Notes/app/src/main/res/layout/item.xml" value="0.2861111111111111" />
       </map>
     </option>
