@@ -12,6 +12,8 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/title"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_margin="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -20,12 +22,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/hint_title"
+
                 android:maxLength="18"
                 android:maxLines="1" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/note_body"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+android:layout_margin="8dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
